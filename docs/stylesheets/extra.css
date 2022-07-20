@@ -3,13 +3,26 @@ and remove edit button */
 :root > * {
     --md-primary-fg-color:        #22b5c7;
     --md-primary-fg-color--light: #ECB7B7;
-    --md-primary-fg-color--dark:  #22b5c7;
+    --md-primary-fg-color--dark:  #555555;
+    --md-primary-bg-color:  #2d2382; /*Font color in Header*/
+    --md-default-bg-color--dark: #edc94e;
+    --md-default-fg-color:  black; /*Font color in regular text*/
+    --md-default-fg-color--light:  black; /*Font color in regular text*/
+    --md-default-fg-color--dark:  white; /*Font color in regular text*/
   }
   
 .nav-cube img {
     width: 90%;
     padding: 0 .6rem;
     margin-bottom: 20px;
+}
+
+[data-md-color-scheme="scalefree-light"] {
+  background-color: #22b5c7;
+}
+
+[data-md-color-theme="scalefree-dark"] {
+  background-color: #c5661d;
 }
 
 /* Style buttons */
@@ -34,7 +47,7 @@ a.btn {
 
 /* Darker background on mouse-over */
 .btn:hover {
-  background-color: #7B4B87;
+  background-color: #2d2382;
 }
 
 .required {
