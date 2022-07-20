@@ -9,23 +9,25 @@ theme:
     name: 'material'
     custom_dir: 'overrides'
     show_sidebar: true
-    logo: 'media/images/sf_logo_klein_rgb.jpg'
+    logo: 'media/images/sf_logo_symbol_rgb.png'
     banner: 'media/images/scalefree_logo.svg'
     favicon: 'assets/images/favicon.ico'
     palette:
-      scheme: material
+      - scheme: material
+        toggle:
+          icon: material/eye
+          name: Switch to dark mode
+        primary: yellow
+      - scheme: slate
+        toggle:
+          icon: material/eye-outline
+          name: Switch to light mode
+        primary: light
     highlightjs: true
     features:
       - navigation.top
 nav:
   - Home: 'index.md'
-  - Metadata Reference: 'metadata.md'
-  - Materialisations: 'materialisations.md'
-  - Extending: 'extending.md'
-  - Contributing:
-    - Getting Started: 'contributing.md'
-    - Style Guides:
-        - Tutorials: 'style_guides/tutorials.md'
   - Licence: 'LICENSE.md'
   - Find Us:
       - GitHub: 'https://github.com/scalefreeCOM'
