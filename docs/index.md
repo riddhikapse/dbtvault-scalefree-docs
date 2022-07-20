@@ -1,5 +1,7 @@
-# Welcome to dbtvault!
-dbtvault is a dbt package that generates & executes the ETL you need to build a Data Vault 2.0 Data Warehouse.
+# Welcome to dbtvault-scalefree!
+dbtvault-scalefree is an enhanced version of [dbtvault](https://dbtvault.readthedocs.io/en/latest/) to fit the Data Vault 2.0 definitions by [Scalefree International GmbH](https://www.scalefree.com).
+
+dbtvault-scalefree a dbt package that generates & executes the ETL you need to build a Data Vault 2.0 Data Warehouse.
 
 !!! Note
     You need to be running dbt to use the package. If needed, you can find get more guidance 
@@ -18,9 +20,6 @@ which functions as a dbt IDE.
 Our package runs inside the dbt environment, so you can use dbt to run other parts of the Data Vault pipeline, combined with the 
 dbtvault package for the Data Vault 2.0 specific steps.
 
-!!! tip "Join our Slack community!"
-    [Join now](https://join.slack.com/t/dbtvault/shared_invite/enQtODY5MTY3OTIyMzg2LWJlZDMyNzM4YzAzYjgzYTY0MTMzNTNjN2EyZDRjOTljYjY0NDYyYzEwMTlhODMzNGY3MmU2ODNhYWUxYmM2NjA){: .md-button }
-
 ## What is Data Vault 2.0?
 Data Vault 2.0 is an Agile method that can be used to deliver a highly scalable enterprise Data Warehouse. 
 
@@ -36,22 +35,22 @@ The Data Vault 2.0 method uses a small set of standard building blocks to model 
 templated SQL. dbt allows for a template-driven implementation using Jinja. This leads to better quality code, 
 fewer mistakes, and greatly improved productivity: i.e. Agility.
 
-## Where does dbtvault fit in?
-The dbtvault package generates and runs Data Vault ETL code from your metadata (table names and mapping details) which is 
+## Where does dbtvault-scalefree fit in?
+The dbtvault-scalefree package generates and runs Data Vault ETL code from your metadata (table names and mapping details) which is 
 then provided to your dbt models contains calls to dbtvault macros.
 The macro does the rest of the work: it processes the metadata, generates SQL and then dbt executes the load 
 respecting any and all dependencies. 
 
-dbt even runs the load in parallel. As Data Vault 2.0 is designed for parallel load and Snowflake is highly parallelised, 
+dbt even runs the load in parallel. As Data Vault 2.0 is designed for parallel load and most modern Databases are highly parallelised, 
 your ETL load will finish in rapid time. Your experience may vary form platform to platform, however we aim to be as
 consistent as possible.
 
-dbtvault reduces the need to write SQL by hand to load the Data Vault, which is a repetitive, time-consuming 
+dbtvault-vault reduces the need to write SQL by hand to load the Data Vault, which is a repetitive, time-consuming 
 and potentially error-prone task.
 
 
-## What are the advantages of dbtvault?
-dbt works with the dbtvault package to:
+## What are the advantages of dbtvault-scalefree?
+dbt works with the dbtvault-scalefree package to:
 
 - Generate SQL to process the staging layer and load the data vault.
 - Ensure consistency and correctness in the generated SQL.
@@ -61,6 +60,7 @@ dbt works with the dbtvault package to:
 - Execute data load in parallel up to a user-defined number of parallel threads.
 - Generate data flow diagrams showing data lineage.
 - Automatically build a documentation website.
+- Completely fits the Data Vault 2.0 Standards coming directly from the creators of Data Vault 2.0
 
 ## Pre-requisite
 If you are going to use the dbtvault package for your Data Vault 2.0 project, then we expect you to have some prior 
@@ -77,14 +77,7 @@ information:
 
 ### Blogs and Downloads
 
-- [What is Data Vault?](https://www.data-vault.co.uk/what-is-data-vault/)
-- [Agile Modeling: Not an Option Anymore](https://www.vertabelo.com/blog/data-vault-series-agile-modeling-not-an-option-anymore/)
-
-## Roadmap and Changelog
-
-We keep an up-to-date log of past and planned changes:
-
-- [Changelog](changelog/stable.md)
-- [Roadmap](roadmap.md)
+- [What is Data Vault?](https://www.scalefree.com/what-is-data-vault/)
+- [Understanding Data Warehouse Automation](https://www.scalefree.com/understanding-automation/)
 
 --8<-- "includes/abbreviations.md"

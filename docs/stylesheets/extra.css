@@ -1,6 +1,11 @@
 /* Additional CSS to add styling to the navigation menu cube
 and remove edit button */
-
+:root > * {
+    --md-primary-fg-color:        #22b5c7;
+    --md-primary-fg-color--light: #ECB7B7;
+    --md-primary-fg-color--dark:  #22b5c7;
+  }
+  
 .nav-cube img {
     width: 90%;
     padding: 0 .6rem;
