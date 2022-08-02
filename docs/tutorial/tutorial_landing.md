@@ -1,0 +1,1 @@
+In this section you will find detailed instructions on how to use all the features of dbtvault-scalefree.
